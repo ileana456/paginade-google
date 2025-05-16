@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Google de Cris</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .search-input {
+      transition: all 0.3s ease;
+    }
+    .search-input:focus {
+      box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#202124] flex flex-col">
+  <!-- Header -->
+  <header class="flex justify-end items-center px-4 py-2 space-x-4">
+    <a href="#" class="p-2 hover:bg-[#303134] rounded-full">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/test-tube.png" 
+           class="w-6 h-6" 
+           alt="Laboratorio"/>
+    </a>
+    <div class="w-8 h-8 bg-[#303134] rounded-full flex items-center justify-center 
+                hover:bg-[#3c4043] cursor-pointer">
+      <span class="text-white font-medium">C</span>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="flex-1 flex flex-col items-center mt-24 px-4">
+    <!-- Logo -->
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" 
+         class="h-16 mb-8" 
+         alt="Google Logo"/>
+    
+    <!-- Caja de Búsqueda -->
+    <div class="max-w-2xl w-full mx-4">
+      <div class="flex items-center border border-[#5f6368] rounded-full 
+                  hover:bg-[#303134] hover:border-transparent px-6 py-3 group">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/search--v1.png" 
+             class="w-5 h-5 mr-3 opacity-75" 
+             alt="Buscar"/>
+        <input type="text" 
+               placeholder="Buscar" 
+               class="search-input flex-1 bg-transparent text-white text-sm 
+                      outline-none placeholder-[#9aa0a6]"/>
+        <div class="flex space-x-4 ml-3">
+          <img src="https://img.icons8.com/ios-filled/24/ffffff/microphone--v1.png" 
+               class="w-5 h-5 cursor-pointer hover:opacity-80" 
+               alt="Micrófono"/>
+          <img src="https://img.icons8.com/ios-filled/24/ffffff/compact-camera.png" 
+               class="w-5 h-5 cursor-pointer hover:opacity-80" 
+               alt="Cámara"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botones de Acción -->
+    <div class="flex space-x-4 mt-8">
+      <button class="bg-[#303134] text-white px-6 py-2 rounded text-sm 
+                     hover:border hover:border-[#5f6368]">
+        Buscar con Google
+      </button>
+      <button class="bg-[#303134] text-white px-6 py-2 rounded text-sm 
+                     hover:border hover:border-[#5f6368]">
+        Me siento con suerte
+      </button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#171717] py-4 px-8 text-sm text-[#9aa0a6]">
+    <div class="max-w-6xl mx-auto">
+      <div class="border-b border-[#3c4043] pb-4 mb-4">
+        <span class="mr-4">Nicaragua</span>
+      </div>
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="flex space-x-6 mb-2 md:mb-0">
+          <a href="#" class="hover:text-white">Sobre Google</a>
+          <a href="#" class="hover:text-white">Publicidad</a>
+          <a href="#" class="hover:text-white">Negocios</a>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-white">Privacidad</a>
+          <a href="#" class="hover:text-white">Condiciones</a>
+          <a href="#" class="hover:text-white">Preferencias</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
